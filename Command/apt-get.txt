@@ -1,0 +1,7 @@
+(1)ubuntu下面播放swf文件
+ 安装swfdec Flash播放器:sudo apt-get install swfdec-gnome
+(2)sudo apt-get install "package_name"
+(3)sudo apt-get remove "package_name"
+(4)sudo apt-get search "package_name"
+(5)sudo dpkg -l //查看安装软件包；
+

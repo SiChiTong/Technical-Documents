@@ -1,0 +1,4 @@
+cat /proc/partitions   //查看要挂载的U盘
+sudo mount -t vfat /dev/sdd1 /mnt/usb/     //其中“dev/sdd1”是要挂载的U盘代号，/mnt/usb/ 为自定义的挂在位置。
+umount /mnt/usb    //卸载挂载的U盘；
+

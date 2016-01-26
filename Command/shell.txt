@@ -1,0 +1,5 @@
+(1)shell的运行：chmod +x ./test.sh
+             $./test.sh
+(2)输出形式：echo "---"
+             printf"---\n"
+

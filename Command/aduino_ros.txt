@@ -1,0 +1,11 @@
+
+(1)aduino 消息创建 cd <sketchbook>/libraries
+                  rm -rf ros_lib
+                  rosrun rosserial_arduino make_libraries.py .
+
+(2)链接aduino 端口： (1) roslaunch rosserial_server serial.launch
+                    (2) rosrun rosserial_python serial_node.py 
+                    (3) rosrun rosserial_server serial_node
+                    (4) rosrun rosserial_server serial_node _port:=/dev/ttyUSB0
+                    (5) roslaunch rosserial_server serial.launch port:=/dev/ttyUSB0
+

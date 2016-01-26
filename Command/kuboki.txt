@@ -1,0 +1,8 @@
+(1)kuboki 无法链接pc ,logitch 无法链接 pc ：  cd /etc/udev/rules.d      
+
+                                             添加  57-kobuki.rules  70-persistent-net.rules （该文件包括在 rules.d） 即可
+
+                                             
+
+
+()()()()()()()()()()()()()()()()()()

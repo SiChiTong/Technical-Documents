@@ -1,0 +1,68 @@
+(1):
+alias  //管理命令别名   unalias //删除...
+ctrl + l //清屏
+ctrl + d //退出终端
+ctrl + r //查找命令
+
+(2)
+shell脚本：
+          #!/bin/bash
+          
+           read   readonly 
+2-1变量：     myname="gongwenbo"    变量类型：局部变量；环境变量；shell变量；
+           echo $myname 
+2-1转义字符：\b退格  \n换行 \r回车 \\\\
+echo和printf 打印数据：$ printf "%s %s %s\n" a b c d e f g h i j   
+                      $ echo "\"It is a test\""
+2-3 :if 和else： if [ $a == $b ]
+             then
+               echo "a is equal to b"
+            elif [ $a -gt $b ]
+             then
+                echo "a is greater than b"
+            elif [ $a -lt $b ]
+             then
+                echo "a is less than b"
+            else
+                echo "None of the condition met"
+            fi
+
+2-4 case esac 语句：read aNum
+                    case $aNum in
+                      1)  echo 'You select 1'
+                          ;;
+                    esac
+            
+2-5：for循环:for in 列表
+             do
+             ...
+             done
+2-6：while循环: 
+          while[...]
+          do
+          ..
+          done
+2-7：until循环：
+           until[ .. ]
+           do
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+           
