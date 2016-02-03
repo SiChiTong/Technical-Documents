@@ -59,8 +59,10 @@
 
 （12）改变权限：chmod 
  (13)环境变量： 
- （14）进程：$top  查看进程COMMAND   
-            $killall -9 COMMAND   //可以杀死进程；          
+（14）进程：$top  查看进程COMMAND   
+            $killall -9 COMMAND   //可以杀死进程；   
+ (15)ssh:  sudo apt-get install ssh
+           sudo service ssh status
               
 
 
