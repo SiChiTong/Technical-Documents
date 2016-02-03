@@ -57,8 +57,8 @@
                第六列：文件被创建或上次被修改的时间。
                第七列：文件名或目录名。
 
-（12）改变权限：chmod 
- (13)环境变量： 
+（12）改变权限：chmod 777 filename
+ (13) 环境变量： 
 （14）进程：$top  查看进程COMMAND   
             $killall -9 COMMAND   //可以杀死进程；   
  (15)ssh:  sudo apt-get install ssh
