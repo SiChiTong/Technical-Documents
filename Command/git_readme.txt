@@ -22,3 +22,4 @@
     git log --pretty=oneline  		git reset --hard HARD^
 (12)git checkout -b dev  //创建dev分支并切换到当前        等价  ：git brance dev	git checkout dev
     git branch //查看分支		git merge dev  //合并dev分支		git branch -d dev    //删除dev		
+    git log --graph --pretty=oneline --abbrev-commit  
