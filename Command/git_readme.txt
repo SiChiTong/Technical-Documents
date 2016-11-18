@@ -20,3 +20,5 @@
 (11)git add	git commit -m ""	git status	git diff	
     git reflog	git checkout -- test.txt		git reset --hard id
     git log --pretty=oneline  		git reset --hard HARD^
+(12)git branch -b dev  //创建dev分支并切换到当前        等价  ：git brance dev	git checkout dev
+    git branch //查看分支		git merge dev  //合并dev分支		git branch -d dev    //删除dev		
