@@ -17,4 +17,6 @@
         4.切换到master：git checkout master
         5.合并dev：git merge dev
         6.删除dev：git branch -d dev
-
+(11)git add	git commit -m ""	git status	git diff	
+    git reflog	git checkout -- test.txt		git reset --hard id
+    git log --pretty=oneline  		git reset --hard HARD^
