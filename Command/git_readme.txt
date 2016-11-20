@@ -33,4 +33,4 @@
 	git checkout -b dev origin/dev    //在本地建立dev分支，前提是远程有dev
 	git branch --set-upstream dev origin/dev   //本地dev和远程dev连接
 	git pull //抓取远程最新提交
-(16)参与开源项目：在github网站
+(16)参与开源项目：在github网站点击fork即可克隆开源项目
