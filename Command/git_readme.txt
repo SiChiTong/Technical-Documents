@@ -23,3 +23,14 @@
 (12)git checkout -b dev  //创建dev分支并切换到当前        等价  ：git brance dev	git checkout dev
     git branch //查看分支		git merge dev  //合并dev分支		git branch -d dev    //删除dev		
     git log --graph --pretty=oneline --abbrev-commit  
+(13)git merge --no-ff -m "merger with no-ff" dev    //禁用fast forward 模式
+	git log --graph --pretty=oneline --abbrev-commit   //科技查看合并效果
+(14)git stash   //隐藏当前修改（没有提交），git stash list   //查看隐藏
+	git stash pop //恢复隐藏文件
+(15)git remote   //要查看远程库的信息		
+	git push origin master/dev  //推送分支(注意：可以在另一台电脑（注意要把SSH Key添加到GitHub）或者同一台电脑的另一个目录下克隆)
+	git clone git@github.com:......   //抓取分支，默认为master
+	git checkout -b dev origin/dev    //在本地建立dev分支，前提是远程有dev
+	git branch --set-upstream dev origin/dev   //本地dev和远程dev连接
+	git pull //抓取远程最新提交
+(16)参与开源项目：在github网站
