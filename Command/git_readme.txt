@@ -1,5 +1,4 @@
 (1)避免～文件上传  vi .gitignore  添加 # temp file 即可
-                                              *~
 (2)提交命令：git commit -m " "
 (3)删除：git rm "your file"
 (4)查看历史版本：git reflog 
@@ -13,18 +12,17 @@
                                                     "git checkout dev"
         2.查看分支：git branch
         3.添加和提交：$git --all  
-                     $git commit -m "  instrument"
+                      $git commit -m "  instrument"
         4.切换到master：git checkout master
         5.合并dev：git merge dev
         6.删除dev：git branch -d dev
-(11)git add	git commit -m ""	git status	git diff	
+(11)git add  	git commit -m ""	git status	 	git diff	
     git reflog	git checkout -- test.txt		git reset --hard id
     git log --pretty=oneline  		git reset --hard HARD^
 (12)git checkout -b dev  //创建dev分支并切换到当前        等价  ：git brance dev	git checkout dev
     git branch //查看分支		git merge dev  //合并dev分支		git branch -d dev    //删除dev		
-    git log --graph --pretty=oneline --abbrev-commit  
+    git log --graph --pretty=oneline --abbrev-commit  //合并的分支，可以查看合并曲线  
 (13)git merge --no-ff -m "merger with no-ff" dev    //禁用fast forward 模式
-	git log --graph --pretty=oneline --abbrev-commit   //科技查看合并效果
 (14)git stash   //隐藏当前修改（没有提交），git stash list   //查看隐藏
 	git stash pop //恢复隐藏文件
 (15)git remote   //要查看远程库的信息		
