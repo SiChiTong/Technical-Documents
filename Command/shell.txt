@@ -2,4 +2,4 @@
              $./test.sh
 (2)输出形式：echo "---"
              printf"---\n"
-
+(3) test shell 
