@@ -47,6 +47,35 @@
 >如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name。
 
 >这就是多人协作的工作模式，一旦熟悉了，就非常简单
+(18)
+
+配置文件介绍
+Git的配置文件分为系统级别(system)、用户级别(global)和仓库级别三个，详细内容可参考man git-config。
+
+/etc/gitconfig
+系统级别的git配置文件，对系统上的所有用户和所有代码仓库都有效，可被用户级别(~/.gitconfig)和仓库级别(.git/config)的配置文件覆盖。
+使用git config --system ... 命令可以修改该配置。
+
+~/.gitconfig
+用户级别的git配置文件，对该用户的所有代码仓库都有效，可被仓库级别的配置文件(.git/config)覆盖。
+使用git config --global ... 命令可以直接修改该配置。
+
+$repo/.git/config
+仓库级别的git配置文件，仅对当前代码仓库($repo)有效，但是可覆盖定义在/etc/gitconfig和~/.gitconfig里的配置。
+git config ... 命令默认修改此配置文件，如果想使用另外的路径存储配置文件可以为git confi命令使用'-f/--file'选项。
+
+
+如下是我在~/.gitconfig中的配置文件
+  1 [user]
+  2     email = gongwenbotarsbot@gmail.com
+  3     name = gongwenbo
+  4 [alias]
+  5     co=checkout
+  6     ci=commit
+  7     br=branch
+  8     st=status
+  9     lg=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 
 
 
